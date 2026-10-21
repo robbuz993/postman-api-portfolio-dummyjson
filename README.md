@@ -66,3 +66,14 @@ Review the test results in Postman to identify passed and failed assertions.
 
 The test suite was executed in Postman using the imported collection
 and environment.
+
+## Known Limitations
+
+- DummyJSON is a public test API and is not a production system.
+- Create, update, and delete operations may simulate changes
+  without permanently modifying server-side data.
+- API responses and behavior depend on the external service
+  and may change over time.
+- Authentication tests may be affected by cookies retained
+  between requests. Clear `dummyjson.com` cookies before
+  running the full collection.
