@@ -1,4 +1,4 @@
-# postman-PI-portfolio-dummyjson
+# Postman-API-portfolio-DummyJSON
 
 ## Project Overview
 
