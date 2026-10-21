@@ -35,3 +35,25 @@ The test suite includes the following checks:
 - **Authentication** — validating login responses and token handling.
 - **Negative scenarios** — testing invalid requests and expected error responses.
 - **CRUD operations** — testing create, read, update, and delete endpoints.
+
+## How to Run
+
+### Prerequisites
+
+- Postman installed on your computer.
+- An internet connection to access the DummyJSON API.
+
+### Setup
+
+1. Clone or download this repository.
+2. Open Postman.
+3. Import the Postman collection JSON file.
+4. Import the Postman environment JSON file.
+5. Select the imported environment.
+6. Open the collection and run the requests using Collection Runner.
+7. Review the test results in Postman.
+
+### Test Execution
+
+The collection uses JavaScript test scripts to validate API responses.
+Review the test results in Postman to identify passed and failed assertions.
