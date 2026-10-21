@@ -57,3 +57,12 @@ The test suite includes the following checks:
 
 The collection uses JavaScript test scripts to validate API responses.
 Review the test results in Postman to identify passed and failed assertions.
+
+## Test Results
+
+- **Total tests:** 111
+- **Passed:** 111
+- **Failed:** 0
+
+The test suite was executed in Postman using the imported collection
+and environment.
