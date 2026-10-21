@@ -77,3 +77,7 @@ and environment.
 - Authentication tests may be affected by cookies retained
   between requests. Clear `dummyjson.com` cookies before
   running the full collection.
+
+## Test Execution Results
+
+The screenshot below shows the results of running the Postman test collection.
