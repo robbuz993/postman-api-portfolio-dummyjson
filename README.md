@@ -23,3 +23,15 @@ The collection covers the following areas:
 - **Products** — retrieving and testing product data.
 - **Todos** — retrieving and testing todo items.
 - **Error Handling** — validating API responses for invalid or unsuccessful requests.
+
+## Test Coverage
+
+The test suite includes the following checks:
+
+- **HTTP status codes** — verifying that API responses return expected status codes.
+- **Response time** — checking that requests complete within a defined time threshold.
+- **Response structure** — validating JSON responses and required fields.
+- **Data validation** — checking values and data types returned by the API.
+- **Authentication** — validating login responses and token handling.
+- **Negative scenarios** — testing invalid requests and expected error responses.
+- **CRUD operations** — testing create, read, update, and delete endpoints.
