@@ -1,7 +1,7 @@
 {
   "info": {
     "_postman_id": "cd30f64d-c2a6-455c-91d0-bacf651f2ecd",
-    "name": "Portfolio API DummyJSON",
+    "name": "dummyjson-api-tests",
     "description": "Portfolio project for API Tester. Covers authentication, CRUD, positive and negative scenarios, response validation, pagination, search, request chaining and reusable environment variables.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "_exporter_id": "26142494"
