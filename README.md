@@ -82,4 +82,4 @@ and environment.
 
 The screenshot below shows the results of running the Postman test collection.
 
-![Postman test execution results](screenshots/postman-test-results.png)
+![Postman test execution results](./postman-test-results.png)
