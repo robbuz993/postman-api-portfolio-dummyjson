@@ -1,5 +1,7 @@
 # Postman-API-portfolio-DummyJSON
 
+[![Postman API Tests](https://github.com/robbuz993/postman-api-portfolio-dummyjson/actions/workflows/api-tests.yml/badge.svg)](https://github.com/robbuz993/postman-api-portfolio-dummyjson/actions/workflows/api-tests.yml)
+
 ## Project Overview
 
 This project demonstrates REST API testing using Postman and JavaScript.
@@ -83,3 +85,27 @@ and environment.
 The screenshot below shows the results of running the Postman test collection.
 
 ![Postman test execution results](./postman-test-results.png)
+
+## CI/CD — GitHub Actions
+
+The API test collection is automatically executed using **Postman CLI** and **GitHub Actions**.
+
+### Workflow triggers
+
+- **Push to `main`:** automatically runs the API tests after changes are pushed to the main branch.
+- **Manual execution:** the workflow can also be started from the GitHub Actions tab using `Run workflow`.
+
+### Test configuration
+
+- **Collection:** `dummyjson-api-tests.postman_collection.json`
+- **Environment:** `dummyjson.postman_environment.json`
+- **Workflow:** `.github/workflows/api-tests.yml`
+- **API:** [DummyJSON](https://dummyjson.com/)
+
+### Execution
+
+The workflow checks out the repository, installs Postman CLI, and runs the collection with the configured environment on a GitHub-hosted runner.
+
+The workflow reports a failure if the collection run exits with an error.
+
+Test results and execution logs are available in the repository's [GitHub Actions](https://github.com/robbuz993/postman-api-portfolio-dummyjson/actions) tab.
