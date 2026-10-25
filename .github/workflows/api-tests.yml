@@ -30,7 +30,3 @@ jobs:
           postman collection run \
             ./dummyjson-api-tests.postman_collection.json \
             --environment ./dummyjson.postman_environment.json
-
-
-
-Co robi ten workflow?
