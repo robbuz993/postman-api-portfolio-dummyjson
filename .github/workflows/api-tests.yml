@@ -1,0 +1,36 @@
+name: Postman API Tests
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  api-tests:
+    name: Run DummyJSON API Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Postman CLI
+        run: |
+          curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
+
+      - name: Verify Postman CLI
+        run: postman --version
+
+      - name: Run API test collection
+        run: |
+          postman collection run \
+            ./dummyjson-api-tests.postman_collection.json \
+            --environment ./dummyjson.postman_environment.json
+
+
+
+Co robi ten workflow?
